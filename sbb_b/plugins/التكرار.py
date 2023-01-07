@@ -115,7 +115,7 @@ async def spam_function(event, sandy, roz, sleeptimem, sleeptimet, DelaySpam=Fal
             )
 
 
-@sbb_b.ar_cmd(pattern="كرر ([\s\S]*)")
+@sbb_b.ar_cmd(pattern="جفوص ([\s\S]*)")
 async def spammer(event):
     sandy = await event.get_reply_message()
     roz = ("".join(event.text.split(maxsplit=1)[1:])).split(" ", 1)
@@ -328,7 +328,7 @@ async def react_spam(event):
                 pass
 
 
-@sbb_b.ar_cmd(pattern="ايقاف التكرار ?(.*)")
+@sbb_b.ar_cmd(pattern="ايقاف جفوص ?(.*)")
 async def stopspamrz(event):
     if gvarstatus("spamwork") is not None and gvarstatus("spamwork") == "true":
         delgvar("spamwork")
